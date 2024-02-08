@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background">
+
+    <Button
+        android:id="@+id/popupEditStudentBtnX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_first_name"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentEditTxtFirstName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/popupEditStudentEditTxtFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/popup_edit_student_txt_first_name"
+                    android:inputType="textShortMessage"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/background_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblFirstName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutLastName"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutFirstName">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_last_name"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentEditTxtLastName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/popupEditStudentEditTxtLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/popup_edit_student_txt_last_name"
+                    android:inputType="textShortMessage"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/background_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblLastName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popupEditStudentLayoutLastName">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_email"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentEditTxtEmail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/popupEditStudentEditTxtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/popup_edit_student_txt_email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/background_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblEmail"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutNumberDone"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutRestrictions">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblStartNumberDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_start_number_done"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentTxtNumberDone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblEndNumberDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_end_number_done"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentTxtNumberDone"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/popupEditStudentTxtNumberDone"
+                    android:layout_width="60dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/box_color"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentLblEndNumberDone"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblStartNumberDone"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutGrade"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutEmail">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_grade"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnDP2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnDP2"
+                    android:layout_width="76dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/dp2"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnDP1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblGrade"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnDP1"
+                    android:layout_width="76dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/dp1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnPreDP"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentBtnDP2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnPreDP"
+                    android:layout_width="107dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/pre_dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentBtnDP1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutLocal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutGrade">
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnLocal"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnNonLocal"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblLocal"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnNonLocal"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/no"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentBtnLocal"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_local"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnLocal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutOnCampus"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutLocal">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblOnCampus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_on_campus"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentTxtOnCampus"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/popupEditStudentTxtOnCampus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblOnCampus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutRestrictions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutOnCampus">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblRestrictions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="@string/popup_edit_student_lbl_exemptions"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentConstrLayoutRestrictions"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/popupEditStudentConstrLayoutRestrictions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="147dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblRestrictions"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/popupEditStudentLayoutCheckboxesRestrictions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:id="@+id/popupEditStudentCheckBoxCow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:buttonTint="@color/box_color"
+                            android:text="@string/cow"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            tools:layout_editor_absoluteX="226dp"
+                            tools:layout_editor_absoluteY="410dp" />
+
+                        <CheckBox
+                            android:id="@+id/popupEditStudentCheckBoxChicken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:buttonTint="@color/box_color"
+                            android:text="@string/chicken"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            tools:layout_editor_absoluteX="226dp"
+                            tools:layout_editor_absoluteY="459dp" />
+
+                        <CheckBox
+                            android:id="@+id/popupEditStudentCheckBoxVisitorCenter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:buttonTint="@color/box_color"
+                            android:text="@string/visitor_center"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            tools:layout_editor_absoluteX="226dp"
+                            tools:layout_editor_absoluteY="508dp" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutLatestDone"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutNumberDone">
+
+                <TextView
+                    android:id="@+id/popupEditStudentLblLatestDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="@string/row_view_data_lbl_latest_done"
+                    android:textColor="@color/box_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentTxtLatestDone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/popupEditStudentTxtLatestDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentLblLatestDone"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popupEditStudentLayoutUpdateRemove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popupEditStudentLayoutLatestDone">
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnRemove"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/clear"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/remove_student"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="19sp"
+                    app:cornerRadius="7dp"
+                    app:iconPadding="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popupEditStudentBtnUpdate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/box_color"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/popupEditStudentBtnUpdate"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/clear"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:visibility="gone"
+                    android:text="@string/update_student"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="19sp"
+                    app:cornerRadius="7dp"
+                    app:iconPadding="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/popupEditStudentBtnRemove"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/box_color"
+                    app:strokeWidth="3dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

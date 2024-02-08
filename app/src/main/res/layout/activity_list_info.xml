@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="android.application.duties_for_all.ActivityListInfo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ListInfoLayoutDate"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/ListInfoLayoutNumberOfBlocks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ListInfoLblDate"
+            android:layout_width="70dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/lbl_date"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ListInfoLayoutDateBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ListInfoLayoutDateBtn"
+            android:layout_width="231dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ListInfoLblDate"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ListInfoDateBox"
+                android:layout_width="231dp"
+                android:layout_height="71dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ListInfoBtnDate"
+                style="?android:spinnerStyle"
+                android:layout_width="231dp"
+                android:layout_height="71dp"
+                android:backgroundTint="@color/clear"
+                android:fontFamily="sans-serif"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="openDatePicker"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                android:text="@string/btn_date"
+                app:cornerRadius="7dp"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/box_color"
+                app:strokeWidth="3dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ListInfoLayoutGoBackNext"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListInfoLayoutTitleTemplates">
+
+        <Button
+            android:id="@+id/ListInfoBtnNext"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_next"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ListInfoBtnGoBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/ListInfoBtnGoBack"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_go_back"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ListInfoBtnNext"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="3dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ListInfoLayoutTitleTemplates"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/ListInfoLayoutGoBackNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListInfoLayoutNumberOfBlocks">
+
+        <Button
+            android:id="@+id/ListInfoBtnTemplates"
+            android:layout_width="321dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/list_info_btn_templates"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="3dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ListInfoLayoutTitleEditTxt"
+            android:layout_width="231dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ListInfoLblTitle"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ListInfoTitleBox"
+                android:layout_width="231dp"
+                android:layout_height="71dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ListInfoEditTxtTitle"
+                android:layout_width="211dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/box_color"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:textSize="25sp"
+                android:hint="@string/list_info_txt_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/ListInfoLblTitle"
+            android:layout_width="70dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/list_info_lbl_title"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ListInfoLayoutTitleEditTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/ListInfoBtnHelp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/question_mark"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/ListInfoTxtInstr"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/list_info_instr"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ListInfoLayoutNumberOfBlocks"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/ListInfoLayoutTitleTemplates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListInfoLayoutDate">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ListInfoLayoutNumberOfBlocksEditTxt"
+            android:layout_width="91dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ListInfoLblNumberOfBlocks"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ListInfoNumberOfBlocksBox"
+                android:layout_width="91dp"
+                android:layout_height="71dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ListInfoEditTxtNumberOfBlocks"
+                android:layout_width="71dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/box_color"
+                android:ems="10"
+                android:hint="@string/hint_num_of_blocks"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/ListInfoLblNumberOfBlocks"
+            android:layout_width="220dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="@string/list_info_lbl_number_of_blocks"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ListInfoLayoutNumberOfBlocksEditTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

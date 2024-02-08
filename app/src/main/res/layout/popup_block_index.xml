@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="465dp"
+    android:background="@drawable/popup_background">
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxtInstr"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/block_description_popup_instr"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn1"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_1"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxtInstr"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_2"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxtInstr"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn3"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_3"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn1"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn4"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_4"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn2"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn5"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_5"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn3"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn6"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_6"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn4"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_7"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn5"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn8"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_8"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn6"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn9"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_9"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn7"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/popupBlockIndexBtn10"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/clear"
+        android:text="@string/block_description_popup_btn_block_10"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexBtn8"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="38dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxtInstr" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="38dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintEnd_toStartOf="@+id/popupBlockIndexBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxtInstr" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt1" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintEnd_toStartOf="@+id/popupBlockIndexBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt2" />
+
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt5"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt3" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt6"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintEnd_toStartOf="@+id/popupBlockIndexBtn6"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt4" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt7"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt5" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt8"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintEnd_toStartOf="@+id/popupBlockIndexBtn8"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt6" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt9"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt7" />
+
+    <TextView
+        android:id="@+id/popupBlockIndexTxt10"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        app:drawableLeftCompat="@drawable/icon_x"
+        app:layout_constraintEnd_toStartOf="@+id/popupBlockIndexBtn10"
+        app:layout_constraintTop_toBottomOf="@+id/popupBlockIndexTxt8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rowTrackTxtName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_cell_time_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay1"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay2"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay3"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay4"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay5"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay6"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay7"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay8"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay9"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay10"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay11"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay12"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay13"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+            <TextView
+                android:id="@+id/rowTrackTxtDay14"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_cell_background" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

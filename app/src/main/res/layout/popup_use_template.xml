@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background">
+
+    <Button
+        android:id="@+id/popupUseTemplateBtnX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/popupUseTemplateBtnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_continue"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:cornerRadius="7dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <LinearLayout
+        android:id="@+id/popupUseTemplateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/popupUseTemplateBtnContinue"
+        app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupUseTemplateBtnX">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/popup_use_template_lbl_block"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/dp2"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/dp1"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/pre_dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/locals"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/non_locals"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/popupUseTemplateBtnContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popupUseTemplateLayout"
+        app:layout_constraintTop_toBottomOf="@+id/popupUseTemplateBtnX">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP21"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP11"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP22"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP12"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP23"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP13"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP24"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP14"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP25"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP15"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP26"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP16"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:checked="true"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP27"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP17"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP28"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP18"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol9"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP29"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP19"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupUseTemplateLayoutCol10"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popupUseTemplateTxtTime10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP210"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxDP110"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxPreDP10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxLocals10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/popupUseTemplateCheckBoxNonLocals10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:buttonTint="@color/box_color"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

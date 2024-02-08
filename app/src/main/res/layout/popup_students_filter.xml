@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background">
+
+    <Button
+        android:id="@+id/popupShowStudentDataFilterBtnX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_alphabetic"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupShowStudentDataFilterSort">
+
+        <TextView
+            android:id="@+id/popupShowStudentDataFilterAlphabeticSort"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:text="@string/popup_show_student_data_filter_lbl_alphabetically"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupShowStudentDataFilterBtnAZ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/popupShowStudentDataFilterBtnAZ"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/clear"
+            android:text="@string/popup_show_student_data_filter_btn_a_z"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupShowStudentDataFilterBtnZA"
+            app:layout_constraintStart_toEndOf="@+id/popupShowStudentDataFilterAlphabeticSort"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/popupShowStudentDataFilterBtnZA"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/clear"
+            android:text="@string/popup_show_student_data_filter_btn_z_a"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popupShowStudentDataFilterBtnAZ"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_by_number"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_alphabetic">
+
+        <TextView
+            android:id="@+id/popupShowStudentDataFilterNumberSort"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:text="@string/popup_show_student_data_filter_lbl_by_number"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupShowStudentDataFilterBtnAscend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/popupShowStudentDataFilterBtnAscend"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/clear"
+            android:text="@string/popup_show_student_data_filter_btn_ascend"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupShowStudentDataFilterBtnDescend"
+            app:layout_constraintStart_toEndOf="@+id/popupShowStudentDataFilterNumberSort"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/popupShowStudentDataFilterBtnDescend"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/clear"
+            android:text="@string/popup_show_student_data_filter_btn_descend"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popupShowStudentDataFilterBtnAscend"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/popupShowStudentDataFilterSort"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/popup_show_student_data_filter_lbl_sorting"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popupShowStudentDataFilterDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/popup_show_student_data_filter_lbl_display"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_by_number" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupShowStudentDataFilterDisplay">
+
+        <CheckBox
+            android:id="@+id/checkboxPredp"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/popup_show_student_data_filter_checkbox_predps"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxDp1"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/popup_show_student_data_filter_checkbox_dp1s"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/checkboxDp2"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/popup_show_student_data_filter_checkbox_dp2s"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGrade">
+
+        <CheckBox
+            android:id="@+id/checkboxLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/locals"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxNonlocal"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/non_locals"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutOnCampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutLocal">
+
+        <CheckBox
+            android:id="@+id/checkboxOncampus"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/popup_show_student_data_filter_checkbox_on_campus"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkboxOffcampus"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:buttonTint="@color/box_color"
+            android:text="@string/popup_show_student_data_filter_checkbox_off_campus"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutRestriction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutOnCampus">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutExempt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtExempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popup_show_student_data_filter_lbl_exempt_from"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxExemptCow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkboxExemptCow"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_cow"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxExemptChicken"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtExempt" />
+
+            <CheckBox
+                android:id="@+id/checkboxExemptChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_chicken"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxExemptVC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxExemptCow" />
+
+            <CheckBox
+                android:id="@+id/checkboxExemptVC"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_visitor_center"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxExemptChicken" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutAllow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popup_show_student_data_lbl_allow"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxAllowCow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkboxAllowCow"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_cow"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxAllowChicken"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAllow" />
+
+            <CheckBox
+                android:id="@+id/checkboxAllowChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_chicken"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkboxAllowVC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxAllowCow" />
+
+            <CheckBox
+                android:id="@+id/checkboxAllowVC"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/popup_show_student_data_filter_checkbox_visitor_center"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxAllowChicken" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

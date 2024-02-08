@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popupEditTemplateLayoutNumOfBlocks"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditTemplateLayoutTitle">
+
+        <TextView
+            android:id="@+id/popupEditTemplateLblNumOfBlocks"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/popup_edit_template_lbl_num_of_blocks"
+            android:textColor="@color/box_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupEditTemplateEditTxtNumOfBlocks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/popupEditTemplateEditTxtNumOfBlocks"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/box_color"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:hint="@string/hint_num_of_blocks"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popupEditTemplateLblNumOfBlocks"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popupEditTemplateLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/popupEditTemplateLblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/popup_edit_template_lbl_title"
+            android:textColor="@color/box_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupEditTemplateEditTxtTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/popupEditTemplateEditTxtTitle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/box_color"
+            android:ems="10"
+            android:inputType="textShortMessage"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp"
+            android:autofillHints="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popupEditTemplateLblTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/popupEditTemplateBtnX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/popupEditTemplateLayoutAddRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditTemplateLayoutNumOfBlocks">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@drawable/table_cell_time_background"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/popup_edit_template_lbl_block"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/popup_edit_template_lbl_time"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/popup_edit_template_lbl_people"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock1"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/one"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock2"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/two"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock3"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/three"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock4"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/four"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock5"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/five"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock6"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/six"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock7"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/seven"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock8"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/eight"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock9"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/nine"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/popupEditTemplateBlock10"
+                android:background="@drawable/table_cell_background"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popupEditTemplateBlockN10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/ten"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/popupEditTemplateBtnTime10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="openTimePicker"
+                    android:text="@string/popup_edit_template_btn_select"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/box_color"
+                    android:textSize="18sp"
+                    app:iconPadding="0dp" />
+
+                <EditText
+                    android:id="@+id/popupEditTemplateEditTxtN10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/box_color"
+                    android:ems="10"
+                    android:autofillHints="0"
+                    android:hint="@string/hint_number_of_people"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textColorHint="@color/box_color"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popupEditTemplateLayoutAddRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/popupEditTemplateBtnAdd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/add"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="29sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupEditTemplateBtnUpdate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/popupEditTemplateBtnRemove"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/remove"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="29sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popupEditTemplateBtnUpdate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/popupEditTemplateBtnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/popup_edit_template_btn_update"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="19sp"
+            app:cornerRadius="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/popupEditTemplateBtnRemove"
+            app:layout_constraintStart_toEndOf="@+id/popupEditTemplateBtnAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

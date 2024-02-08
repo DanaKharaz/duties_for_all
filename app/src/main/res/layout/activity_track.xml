@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.application.duties_for_all.ActivityTrack"
+    android:background="@color/background_color">
+
+    <Button
+        android:id="@+id/TrackBtnGoBack"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_go_back"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:cornerRadius="7dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/box_color"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/TrackBtnHelp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/question_mark"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/TrackBtnGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/TrackLayoutGrades"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_background"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackBtnDay1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/TrackTxtPredp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="@string/pre_dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/box_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/TrackTxtDp1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/TrackTxtDp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="@string/dp1"
+                        android:textAlignment="center"
+                        android:textColor="@color/box_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/TrackTxtDp2"
+                        app:layout_constraintStart_toEndOf="@+id/TrackTxtPredp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/TrackTxtDp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="@string/dp2"
+                        android:textAlignment="center"
+                        android:textColor="@color/box_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/TrackTxtDp1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/TrackBtnDay1"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:backgroundTint="@color/box_color"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:cornerRadius="0dp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay2"
+                    app:layout_constraintStart_toEndOf="@id/TrackLayoutGrades"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay2"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay3"
+                    app:layout_constraintStart_toEndOf="@id/TrackBtnDay1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay3"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay4"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay4"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay5"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay5"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay6"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay6"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay7"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay7"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay8"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay8"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay9"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay9"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay10"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay10"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay11"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay11"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay12"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay10"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay12"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay13"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay13"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TrackTxtDay14"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TrackTxtDay14"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/table_cell_time_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/background_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/TrackTxtDay13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/TrackRecyclerViewNames"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

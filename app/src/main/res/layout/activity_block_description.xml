@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="android.application.duties_for_all.ActivityBlockDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BlockDescriptionLayoutGrades"
+        android:layout_width="321dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/BlockDescriptionLayoutGoBackNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlockDescriptionLayoutNumberOfPeople">
+
+        <LinearLayout
+            android:id="@+id/BlockDescriptionLayoutLocal"
+            android:layout_width="155dp"
+            android:layout_height="98dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/BlockDescriptionCheckBoxLocals"
+                android:layout_width="155dp"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/locals"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <CheckBox
+                android:id="@+id/BlockDescriptionCheckBoxNonLocals"
+                android:layout_width="155dp"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/non_locals"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="459dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BlockDescriptionLayoutPreDPDP1DP2"
+            android:layout_width="150dp"
+            android:layout_height="147dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/BlockDescriptionCheckBoxPreDP"
+                android:layout_width="120dp"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/pre_dp"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <CheckBox
+                android:id="@+id/BlockDescriptionCheckBoxDP1"
+                android:layout_width="120dp"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/dp1"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="459dp" />
+
+            <CheckBox
+                android:id="@+id/BlockDescriptionCheckBoxDP2"
+                android:layout_width="120dp"
+                android:layout_height="49dp"
+                android:buttonTint="@color/box_color"
+                android:text="@string/dp2"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="508dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BlockDescriptionLayoutTime"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/BlockDescriptionLayoutNumberOfPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/BlockDescriptionLayoutTimeBtn"
+            android:layout_width="231dp"
+            android:layout_height="71dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/BlockDescriptionTimeBox"
+                android:layout_width="231dp"
+                android:layout_height="71dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BlockDescriptionBtnTime"
+                android:layout_width="231dp"
+                android:layout_height="71dp"
+                android:backgroundTint="@color/clear"
+                android:fontFamily="sans-serif"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="openTimePicker"
+                android:text="@string/block_description_btn_time"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                app:cornerRadius="7dp"
+                app:iconPadding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/box_color"
+                app:strokeWidth="3dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/BlockDescriptionLblTime"
+            android:layout_width="70dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="@string/block_description_lbl_time"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BlockDescriptionLayoutNumberOfPeople"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/BlockDescriptionLayoutGrades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlockDescriptionLayoutTime">
+
+        <TextView
+            android:id="@+id/BlockDescriptionLblNumberOfPeople"
+            android:layout_width="220dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="@string/block_description_lbl_number_of_people"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="101dp"
+            android:layout_height="71dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/BlockDescriptionNumberOfPeopleBox"
+                android:layout_width="101dp"
+                android:layout_height="71dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/BlockDescriptionEditTxtNumberOfPeople"
+                android:layout_width="81dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/box_color"
+                android:ems="10"
+                android:hint="@string/hint_number_of_people"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BlockDescriptionLayoutGoBackNext"
+        android:layout_width="321dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlockDescriptionLayoutGrades">
+
+        <Button
+            android:id="@+id/BlockDescriptionBtnNext"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_next"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/BlockDescriptionBtnGoBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/BlockDescriptionBtnGoBack"
+            android:layout_width="140dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="sans-serif"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_go_back"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/BlockDescriptionBtnNext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/box_color"
+            app:strokeWidth="3dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/BlockDescriptionBtnHelp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/clear"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/question_mark"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_color"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/BlockDescriptionTxtInstr"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/block_description_instr"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/BlockDescriptionBtnBlockIndex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BlockDescriptionBtnBlockIndex"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/clear"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlockDescriptionTxtInstr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

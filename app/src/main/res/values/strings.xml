@@ -1,0 +1,210 @@
+<resources>
+    <!--commonly used-->
+    <string name="app_name">Duties for All</string>
+    <string name="btn_go_back">Go back</string>
+    <string name="btn_next">Next</string>
+    <string name="pre_dp">Pre-DP</string>
+    <string name="dp2">DP2</string>
+    <string name="dp1">DP1</string>
+    <string name="locals">Locals</string>
+    <string name="non_locals">Non-locals</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="question_mark">?</string>
+    <string name="add">+</string>
+    <string name="remove">-</string>
+    <string name="x">X</string>
+    <string name="bullet_point"> • </string>
+    <string name="remove_student">Remove</string>
+    <string name="update_student">Update</string>
+    <string name="confirm">Confirm</string>
+    <string name="proceed">Proceed</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_redo">Restart</string>
+    <string name="cow">Cow</string>
+    <string name="chicken">Chicken</string>
+    <string name="visitor_center">Visitor Center</string>
+    <string name="dining_hall">Dining Hall</string>
+    <string name="other">Other</string>
+    <string name="hint_num_of_blocks">1–10</string>
+    <string name="hint_number_of_people">1–20</string>
+    <string name="btn_date">Select date</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="lbl_date">Date:</string>
+    <string name="lbl_type">Type:</string>
+    <string name="not_enough_people_warning">It appears that there are not enough students available, would you like to restart the list creation process or proceed, possibly leaving empty space(s) in the list?</string>
+
+    <!--main-->
+    <string name="welcome">WELCOME</string>
+    <string name="to">TO</string>
+    <string name="duties_for_all">DUTIES FOR ALL</string>
+    <string name="corner">corner</string>
+
+    <!--verification-->
+    <string name="verification_instr">Please verify that you are an authorized user</string>
+    <string name="verification_lbl_code">Verification code:</string>
+    <string name="verification_hint_code">Enter code</string>
+    <string name="verification_btn_reset"><u>Reset verification code</u></string>
+    <string name="verification_str_subject">Verification Code Reset</string>
+    <string name="verification_str_message_start">Dear Boarding Staff,\n\nIt appears that one of the staff members requested to change the verification code of the Duties For All application. Use the following temporary PIN to reset the verification code through the application. The temporary PIN will be active for 5 minutes.\n\nTemporary PIN:</string>
+    <string name="verification_str_message_end">\n\nPlease make sure that the other staff members are notified of the change and know the new verification code.\n\nBest Regards,\nDuties For All</string>
+
+    <!--home-->
+    <string name="home_instr">What would you like to do today?</string>
+    <string name="home_btn_create">Create</string>
+    <string name="home_btn_track">Track</string>
+    <string name="home_btn_data">View or edit</string>
+    <string name="home_btn_log_out">Log out</string>
+
+    <!--create list-->
+    <string name="create_list_instr">What type of duty list would you like to create?</string>
+    <string name="create_list_btn_animal">Animal</string>
+
+    <!--create animal list-->
+    <string name="create_animal_list_instr">What type of animal duty list would you like to create?</string>
+
+    <!--list info-->
+    <string name="list_info_instr">Please fill in the following information about the list</string>
+    <string name="list_info_lbl_number_of_blocks">Number of blocks:</string>
+    <string name="list_info_btn_templates">Templates</string>
+    <string name="list_info_lbl_title">Title:</string>
+    <string name="list_info_txt_title">Title</string>
+    <string name="list_info_popup_warning">A list of the same type for the same date has already been created. If this new list is created it will replace the old one. Please confirm if you would like to proceed.</string>
+
+    <!--block description-->
+    <string name="block_description_instr">Fill in the following about each block</string>
+    <string name="block_description_lbl_time">Time:</string>
+    <string name="block_description_btn_time">Select Time</string>
+    <string name="block_description_lbl_number_of_people">Number of people:</string>
+    <string name="block_description_lbl_grades">Grades:</string>
+    <string name="block_description_popup_instr">Which block will you be describing?</string>
+    <string name="block_description_popup_btn_block_1">Block 1</string>
+    <string name="block_description_popup_btn_block_2">Block 2</string>
+    <string name="block_description_popup_btn_block_3">Block 3</string>
+    <string name="block_description_popup_btn_block_4">Block 4</string>
+    <string name="block_description_popup_btn_block_5">Block 5</string>
+    <string name="block_description_popup_btn_block_6">Block 6</string>
+    <string name="block_description_popup_btn_block_7">Block 7</string>
+    <string name="block_description_popup_btn_block_8">Block 8</string>
+    <string name="block_description_popup_btn_block_9">Block 9</string>
+    <string name="block_description_popup_btn_block_10">Block 10</string>
+
+    <!--templates-->
+    <string name="templates_txt_instr">Choose an existing template or create a new one</string>
+    <string name="templates_btn_create_template">Create template</string>
+    <string name="template_edit_txt_title"><i>Title</i></string>
+
+    <!--sorting-->
+    <string name="sorting_instr">Edit the list and add extra students if needed</string>
+    <string name="sorting_btn_clear_list">Clear list</string>
+    <string name="sorting_popup_warning">The selected student already appears in a different list on the same day. Please confirm if you would still like to add them to the current list.</string>
+
+    <!--list created-->
+    <string name="list_created_instr1">The list has been created successfully</string>
+    <string name="list_created_instr2">The list has been edited successfully</string>
+    <string name="list_created_btn_view_list">View list</string>
+    <string name="list_created_btn_export_image">Export image</string>
+    <string name="list_created_btn_main_menu">Main menu</string>
+
+    <!--track-->
+    <string name="track_instr">Mark which students are or will be on campus</string>
+
+    <!--editing-->
+    <string name="editing_instr">Edit the chosen list</string>
+    <string name="editing_btn_change">Change list</string>
+    <string name="editing_popup_warning">Some cells appear to be empty. Please confirm if you would like to proceed.</string>
+    <string name="popup_choose_list">Choose the type and date of the needed list</string>
+
+    <!--check data-->
+    <string name="check_data_instr">Please choose what data you would like to view or edit</string>
+    <string name="check_data_btn_students">Students</string>
+    <string name="check_data_btn_lists">Lists</string>
+    <string name="check_data_btn_templates">Templates</string>
+
+    <!--show student data-->
+    <string name="show_student_data_btn_filter">Filters</string>
+    <string name="show_student_data_popup_warning">If a student is removed, all their data will be deleted permanently. Please confirm you would like to proceed</string>
+
+    <!--popup edit student data-->
+    <string name="popup_edit_student_lbl_email">Email:</string>
+    <string name="popup_edit_student_txt_email">Email</string>
+    <string name="popup_edit_student_lbl_first_name">First name:</string>
+    <string name="popup_edit_student_txt_first_name">First name</string>
+    <string name="popup_edit_student_lbl_last_name">Last name:</string>
+    <string name="popup_edit_student_txt_last_name">Last name</string>
+    <string name="popup_edit_student_txt_number">Number</string>
+    <string name="popup_edit_student_lbl_start_number_done">Has had duties</string>
+    <string name="popup_edit_student_lbl_end_number_done">times</string>
+    <string name="popup_edit_student_lbl_grade">Grade:</string>
+    <string name="popup_edit_student_lbl_exemptions">Exempt from:</string>
+    <string name="popup_edit_student_lbl_on_campus">On campus:</string>
+    <string name="popup_edit_student_lbl_local">Local:</string>
+    <string name="popup_edit_student_btn_add">Add</string>
+
+    <!--popup show student data filter-->
+    <string name="popup_show_student_data_filter_btn_descend">Descend.</string>
+    <string name="popup_show_student_data_filter_btn_ascend">Ascend.</string>
+    <string name="popup_show_student_data_filter_lbl_by_number">By number:</string>
+    <string name="popup_show_student_data_filter_lbl_alphabetically">Alphabetically:</string>
+    <string name="popup_show_student_data_filter_btn_a_z">A-Z</string>
+    <string name="popup_show_student_data_filter_btn_z_a">Z-A</string>
+    <string name="popup_show_student_data_filter_lbl_sorting">Sorting</string>
+    <string name="popup_show_student_data_filter_checkbox_on_campus">On campus</string>
+    <string name="popup_show_student_data_filter_lbl_display">Display</string>
+    <string name="popup_show_student_data_filter_checkbox_predps">Pre-DPs</string>
+    <string name="popup_show_student_data_filter_checkbox_dp1s">DP1s</string>
+    <string name="popup_show_student_data_filter_checkbox_dp2s">DP2s</string>
+    <string name="popup_show_student_data_filter_checkbox_off_campus">Off campus</string>
+    <string name="popup_show_student_data_filter_lbl_exempt_from">Exempt from</string>
+    <string name="popup_show_student_data_filter_checkbox_cow">Cow</string>
+    <string name="popup_show_student_data_filter_checkbox_chicken">Chicken</string>
+    <string name="popup_show_student_data_filter_checkbox_visitor_center">Visitor center</string>
+    <string name="popup_show_student_data_lbl_allow">Allow</string>
+
+    <!--popup choose people-->
+    <string name="popup_choose_people_everyone">Everyone</string>
+    <string name="popup_choose_people_chosen">Chosen</string>
+    <string name="popup_choose_people_extra">Extra</string>
+
+    <!--popup edit template-->
+    <string name="popup_edit_template_lbl_title">Title:</string>
+    <string name="popup_edit_template_lbl_num_of_blocks">Number of blocks:</string>
+    <string name="popup_edit_template_lbl_block">Block</string>
+    <string name="popup_edit_template_lbl_time">Time</string>
+    <string name="popup_edit_template_lbl_people">People</string>
+    <string name="popup_edit_template_btn_select">Select</string>
+    <string name="popup_edit_template_btn_update">Update template</string>
+    <string name="popup_edit_template_btn_create">Create template</string>
+
+    <!--popup use template-->
+    <string name="popup_use_template_lbl_block">Block:</string>
+    
+    <!--popup reset code-->
+    <string name="popup_reset_code_instr1">Please input the temporary PIN that was sent to the staff email below</string>
+    <string name="popup_reset_code_instr2">Enter the new verification code. The code will be permanently change, make sure to notify all of the staff</string>
+    <string name="popup_reset_code_hint_pin">Temporary PIN</string>
+    <string name="popup_reset_code_hint_code1">Enter new code</string>
+    <string name="popup_reset_code_hint_code2">Re-enter new code</string>
+
+    <!--recycler view rows-->
+    <string name="row_view_data_lbl_local">Local:</string>
+    <string name="row_view_data_lbl_on_campus">On campus:</string>
+    <string name="row_view_data_lbl_start_number_done">Has had duties</string>
+    <string name="row_view_data_lbl_end_number_done">times</string>
+    <string name="row_view_data_lbl_latest_done">Last had duties on</string>
+    <string name="row_view_data_lbl_restrictions">Restrictions:</string>
+    <string name="row_templates_lbl_at">At</string>
+    <string name="row_templates_lbl_people">people</string>
+    <string name="row_templates_lbl_dash">-</string>
+    <string name="btn_view_list_appearances">View list appearances</string>
+
+</resources>

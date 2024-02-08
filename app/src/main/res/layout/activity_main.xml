@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="android.application.duties_for_all.ActivityMain">
+
+    <TextView
+        android:id="@+id/textTO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/to"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWELCOME"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/textTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textDUTIESFORALL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/duties_for_all"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTO" />
+
+    <ImageView
+        android:id="@+id/imageCornerTopLeft"
+        android:layout_width="138dp"
+        android:layout_height="138dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splashscreen_edge"
+        android:contentDescription="@string/corner" />
+
+    <ImageView
+        android:id="@+id/imageCornerBottomRight"
+        android:layout_width="138dp"
+        android:layout_height="138dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/splashscreen_edge"
+        android:contentDescription="@string/corner" />
+
+    <ImageView
+        android:id="@+id/imageCornerBottomLeft"
+        android:layout_width="138dp"
+        android:layout_height="138dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splashscreen_edge"
+        android:contentDescription="@string/corner" />
+
+    <ImageView
+        android:id="@+id/imageCornerTopRight"
+        android:layout_width="138dp"
+        android:layout_height="138dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splashscreen_edge"
+        android:contentDescription="@string/corner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
