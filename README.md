@@ -2,12 +2,15 @@
 This is an Android application. It was fully created by myself and served as a great learning experience to get started with Android development.
 
 BACKGROUND
+
 All students at a certain school are required to give back to the community they live in by working with animals or at the village's dining hall, etc. This is organized by the school’s boarding staff: they put together ‘duty lists’ taking into account which people are going to be on campus, everyone who has restrictions about certain types of duties (e.g. some students are exempt from animal duties), whoever may need extra duties (they may be given as punishment for breaking the school rules; it is not counted - as if the student(s) did not appear on the list), and most importantly, how to make it fair for all students.
 
 PURPOSE
+
 The purpose of the application is to provide an intuitive and easy-to-use method of creating a fair duty list system. The application will allow the school staff to create duty lists and maintain the whole system from their pocket, making it straightforward, efficient, and exact, reducing possible human errors.
 
 SUCCESS CRITERIA
+
 The application was developed with the following success criteria in mind, all of which were at least partially satisfied in the end:
 - Minimally, the application should
     - Allow the user to create duty lists, taking into account all student restrictions, and who will be available at the given time
