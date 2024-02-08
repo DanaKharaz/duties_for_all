@@ -1,5 +1,5 @@
 # duties_for_all
-This is an Android application. It was fully created by myself and served as a great learning experience to get started with Android development.
+This is an Android application. It was fully created by myself and served as a great learning experience to get started with Android development. Time of development: 05/2022 - 12/2022
 
 BACKGROUND
 
