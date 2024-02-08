@@ -32,7 +32,7 @@ public class JavaMailAPI extends AsyncTask<Void, Void, Void> {
 
         Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("dutiesforall@outlook.com", "Duties4All12345!");
+                return new PasswordAuthentication("dutiesforall@outlook.com", "REDACTED");
             }
         });
 
