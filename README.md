@@ -1,7 +1,7 @@
 # duties_for_all
 This is an Android application. It was fully created by myself and served as a great learning experience to get started with Android development. Time of development: 05/2022 - 12/2022
 
-Here are also the initial designs for the application [design](https://www.canva.com/design/DAFByHWZo1Q/QLe0CBg7m5wS_lpNFmZ2zA/edit?utm_content=DAFByHWZo1Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and [structure](https://www.canva.com/design/DAFH0ktUifg/LAzQbuxsAIYnWEwEWcGCbg/edit?utm_content=DAFH0ktUifg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+Here are also the initial plans for the application [design](https://www.canva.com/design/DAFByHWZo1Q/QLe0CBg7m5wS_lpNFmZ2zA/edit?utm_content=DAFByHWZo1Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and [structure](https://www.canva.com/design/DAFH0ktUifg/LAzQbuxsAIYnWEwEWcGCbg/edit?utm_content=DAFH0ktUifg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 BACKGROUND
 
